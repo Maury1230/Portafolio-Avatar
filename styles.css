@@ -1,0 +1,549 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'halant', sans-serif;
+    --color-dark:#092635;
+    --color-mid-dark:#1B4242;
+    --color-light-green:#5C8374;
+    --color-lighter-green:#9EC8B9;
+    --color-text:#eee;
+}
+
+/*-----------------------Header -----------------------*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--color-dark);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    opacity: .9;
+    padding: 0 3rem;
+    z-index: 10;
+}
+
+.header__link {
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+}
+
+.header__img {
+    width: 7rem;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+
+.navbar__link {
+    display: inline-block;
+    padding: 0rem 1.8rem;
+    font-size: 1.8rem;
+    color: var(--color-text);
+    border-radius: 1.5rem;
+}
+
+.navbar a:hover {
+    color: var(--color-lighter-green);
+}
+
+/*-------------Header Ends--------------------*/
+
+
+
+/*-------------Main ----------------------------*/
+
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 100dvh;
+    padding: 5rem 0;
+    background-image: linear-gradient(#0008, #0008)
+    ,url("https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/noticias-cine/video-parque-tematico-pandora-el-mundo-de-avatar/124193909-3-esl-ES/Este-video-ensena-lo-que-habra-en-Pandora-el-mundo-de-Avatar.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+    
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 4px 7px #aaa) drop-shadow(0 7px 30px #aaa);
+}
+
+.hero__title {
+    font-size: 3.7rem;
+    color: var(--color-text);
+}
+
+.hero__subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-text);
+    animation: text-blur .8s cubic-bezier(.27,.02,.18,1.25);
+}
+
+.hero__img {
+    width: 26%;
+    border-radius: 50%;
+    min-width: 13rem;
+    max-height: 44rem;
+    box-shadow: 0 0 10px #fff5;
+    z-index: 1;
+	animation: prueba 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+}
+
+
+.aboutme__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 12rem 0;
+    flex-wrap: wrap;
+    
+}
+
+.aboutme__img {
+    width: 28%;
+    min-width: 17rem;
+}
+
+.aboutme__content {
+    min-height: 30rem;
+    max-width: 40%;
+    min-width: 20rem;
+    background-image: url("./svg/blob.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.aboutme__title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.aboutme__text {
+    text-wrap: pretty;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/*------------------------Aboutme ends--------------*/
+
+/*.skills {
+    margin: 0 0;  dar al final
+}*/
+
+.skills {
+    background-color: var(--color-dark);
+    padding: 5rem 5rem 12.9rem 5rem;
+}
+
+.skills__title {
+    text-align: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--color-text);
+}
+
+.skills__text {
+    text-wrap: pretty;
+    font-size: 1.2rem;
+}
+
+.skills__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.card {
+    max-width: 23rem;
+    padding: 2rem 2rem;
+    border-radius: 1.2rem;
+    color: var(--color-text);
+    box-shadow: 0 0 20px #0009;
+}
+
+.card:hover {
+    opacity: .75;
+}
+
+.card__img {
+    width: 6rem;
+}
+
+.card__title {
+    font-size: 2rem;
+}
+
+.card__html {
+    background-size: cover;
+    background-image: linear-gradient(#0005, #0005)
+    ,url(".//img/html.jpg");
+}
+
+.card__css {
+    background-image: linear-gradient(#0001, #1111)
+    ,url("./img/css.jpg");
+}
+
+.card__js {
+    background-image: linear-gradient(#0009, #0009)
+    ,url("./img/javascript.jpg");
+}
+
+.card__python {
+    background-image: linear-gradient(#0005, #0005)
+    ,url("./img/python.jpg");
+}
+
+.skills__content {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/*-------------------Skills ends-----------------*/
+
+.contact{
+    padding: 12rem 0;
+}
+
+.form {
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color:var(--color-mid-dark);
+    border-radius: 1rem;
+    box-shadow: 0 0 20px #0009;
+}
+
+.formulario__label {
+    font-size: 2.2rem;
+    color: var(--color-text);
+}
+
+.formulario__input {
+    width: 37rem;
+    padding: 0.4rem 1rem;
+    font-size: 1.2rem;
+    background-color: #ededed;
+}
+
+.formulario__textarea{
+    width: 35rem;
+    resize: none;
+    min-height: 10rem;
+    padding: .5rem 2rem;
+    background-color: #ededed;
+}
+
+.formulario__btn {
+    padding: .5rem 3rem;
+    margin-top: 3rem;
+    background-color: var(--color-lighter-green);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px #0007;
+}
+
+.check__container {
+    width: 90%;
+    padding: 1rem 0 0 2.2rem;
+    font-size: 1.3rem;
+    color: var(--color-text);
+    position: relative;
+}
+
+.form__checkbox {
+    position: absolute;
+    right: 18rem;
+    top: 1.2rem;
+}
+
+.label__checkbox {
+    display: none;
+}
+
+.form__checkbox:checked + .label__checkbox {
+    display: block;
+}
+
+.formulario__btn:hover {
+    background-color: var(--color-text);
+    color: #000;
+}
+
+/*-------------------form ends---------------------*/
+
+/*-------------------footer start-------------------*/
+
+.footer__link--principal {
+    color: var(--color-text);
+    margin-bottom: 3rem;
+}
+
+.footer__img {
+    width: 9rem;
+}
+
+.footer__title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dark);
+    color: var(--color-text);
+    padding: 2rem 0;
+}
+
+.footer__history {
+    width: 25%;
+    color: var(--color-text);
+}
+
+.footer__history h3 {
+    font-size: 2rem;
+}
+
+.footer__history p {
+    font-size: 1.3rem;
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__social--link {
+    padding: 1rem;
+}
+
+.footer__social--img {
+    width: 5rem;
+    height: 5rem;
+    animation: anim 2s infinite alternate steps(120);
+}
+
+.footer__social--img:hover {
+    animation: none;
+}
+
+.footer__navigation {
+    font-size: 1.3rem;
+}
+
+.footer__navigation h4 {
+    font-size: 1.5rem;
+}
+
+.footer__navigation--link {
+    color: var(--color-text);
+    display: inline-block;
+    padding: .7rem 0;
+}
+
+.footer__navigation--link:hover,.footer__logo--link:hover {
+    color: var(--color-lighter-green);
+}
+
+.footer__logo--link {
+    display: inline-block;
+    color: var(--color-text);
+    padding: .7rem 0;
+}
+
+.footer__github {
+    filter: invert(1);
+}
+
+.footer__logo {
+    font-size: 1.3rem;
+}
+
+.footer__link {
+    text-align: center;
+}
+
+.footer__content {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.footer span {
+    color: var(--color-light-green);
+}
+
+.footer__social--img:hover {
+    transform:scale(1.1);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .form {
+        width: 79%;
+        min-width: 28rem;
+        height: auto;
+    }
+    .header {
+        display: none;
+    }
+    .formulario__input {
+        width: 80%;
+    }
+    .formulario__textarea {
+        width: 80%;
+    }
+    .hero__title {
+        text-align: center;
+    }
+    .aboutme__container {
+        padding: 0;
+    }
+    .skills__title {
+        font-size: 4rem;
+    }
+    .aboutme__content{
+        max-width: 80%;
+        background-size: contain;
+    }
+    .hero__img {
+        margin: 0 auto;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .footer__content {
+        padding: 0px;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .footer__history, .footer__navigation,.footer__logo {
+        width: 80%;
+        text-align: center
+    }
+    .check__container {
+        width: 100%;
+        text-align: left;
+        padding-left: 5rem;
+    }
+    .form__checkbox{
+        right: 2rem;
+    }
+
+}
+
+@keyframes anim {
+    0% {
+        transform: translateY(0);
+        
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0);
+        
+    }
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-9px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes text-blur {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        filter: blur(12px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(-1800px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes prueba {
+    0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+
+
+
+

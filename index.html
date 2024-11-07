@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a class="header__link" href="#">
+            <img class="header__img" src="./img/logo-proyecto1-recorte.png" alt="logo">
+            <h2>Maury</h2>
+        </a>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a class="navbar__link" href="#skills">SKILLS</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#aboutme">SOBRE NOSOTROS</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#contact">CONTACTO</a></li>
+            </ul>
+        </nav>  
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero__container">
+                <h1 class="hero__title">Mauricio Contreras</h1>
+                <h3 class="hero__subtitle">Frontend Developer</h3>
+            </div>
+            <img class="hero__img" src="https://i.etsystatic.com/32354559/r/il/90634f/4586700075/il_570xN.4586700075_94jc.jpg" alt="">
+        </section>
+        <section class="aboutme" id="aboutme">
+            <div class="aboutme__container">
+                <img class="aboutme__img" src="./img/avatar-main.jpg" alt="avatar">
+                <div class="aboutme__content">
+                    <h2 class="aboutme__title">About Me</h2>
+                    <p class="aboutme__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus sapiente dolores sit, consectetur a consequatur reprehenderit numquam rerum velit inventore earum reiciendis assumenda perferendis minima distinctio accusamus dicta pariatur atque!</p>
+                </div>         
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <h2 class="skills__title">Skills</h2>
+            <div class="skills__container">
+                <div class="card card__html">
+                <div class="skills__content">
+                    <img class="card__img" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
+                    <h3 class="card__title">Html</h3>
+                </div>
+                    <p class="skills__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eos illum eius ipsum cum sequi! Numquam reiciendis itaque reprehenderit, unde omnis, tempora natus assumenda animi tempore nostrum hic corrupti ea!sdasdsadsadsadsadsadlorem
+                    </p>  
+                </div>
+                <div class="card card__css">
+                <div class="skills__content">
+                    <img class="card__img" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
+                    <h3 class="card__title">Css</h3>
+                </div>
+                    <p class="skills__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eos illum eius ipsum cum sequi! Numquam reiciendis itaque reprehenderit, unde omnis, tempora natus assumenda animi tempore nostrum hic corrupti ea!
+                    </p>
+                </div>
+                <div class="card card__js">
+                    <div class="skills__content">
+                    <img class="card__img" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>
+                    <h3 class="card__title">Javascript</h3>
+                    </div>
+                    <p class="skills__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eos illum eius ipsum cum sequi! Numquam reiciendis itaque reprehenderit, unde omnis, tempora natus assumenda animi tempore nostrum hic corrupti ea!
+                    </p>
+                </div>
+                <div class="card card__python">
+                    <div class="skills__content">
+                    <img class="card__img " src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1"/>
+                    <h3 class="card__title">Python</h3>
+                    </div>
+                    <p class="skills__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eos illum eius ipsum cum sequi! Numquam reiciendis itaque reprehenderit, unde omnis, tempora natus assumenda animi tempore nostrum hic corrupti ea!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <form class="form" action="#">
+                <label class="formulario__label" for="name">Name</label >
+                <input class="formulario__input" type="text" id="name" placeholder="Mauricio Contreras" required>
+                <label class="formulario__label" for="email">Email</label>
+                <input class="formulario__input" type="email" id="email" placeholder="Ejemplo@gmail.com" required>
+                <label class="formulario__label" for="message">Mensaje</label>
+                <textarea class="formulario__textarea" id="message" placeholder="Escribe tu mensaje...."></textarea>
+                <div class="check__container">
+                    <input class="form__checkbox" type="checkbox">
+                    <label class="label__checkbox" for="checkbox">Acepto términos y condicioness</label>
+                </div>
+                <input class="formulario__btn" type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <a class="footer__link--principal" href="#">
+            <img class="footer__img" src="./img/logo-proyecto1-recorte.png" alt="logo">
+            <h2 class="footer__title">Maury</h2>
+        </a>
+        <div class="footer__content">
+            <div class="footer__history">
+                <h3>MCED Footer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quod repellat et odit.</p>
+            </div>
+            <div class="footer__navigation">
+                <h4>Navigation</h4>
+                <ul>
+                    <li class="footer__navigation--item"><a class="footer__navigation--link" href="#">Home</a></li>
+                    <li class="footer__navigation--item"><a class="footer__navigation--link" href="#">About us</a></li>
+                    <li class="footer__navigation--item"><a class="footer__navigation--link" href="#">Services</a></li>
+                    <li class="footer__navigation--item"><a class="footer__navigation--link" href="#">Features</a></li>
+                </ul>
+            </div>
+            <div class="footer__logo">
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__logo--link" href="#">Acerca de mi</a></li>
+                    <li class="footer__item"><a class="footer__logo--link"  href="#">Mas</a></li>
+                    <li class="footer__item"><a class="footer__logo--link" href="#">Referencias</a></li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <a class="footer__social--link" href="#">
+                    <img width="48" height="48" class="footer__social--img" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
+                </a>
+                <a class="footer__logo--link" href="#">
+                    <img width="48" height="48" class="footer__social--img" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/>
+                </a>
+                <a class="footer__social--link footer__github" href="#">
+                    <img width="32" height="32" class="footer__social--img" src="https://img.icons8.com/windows/32/github.png" alt="github"/>
+                </a>
+            </div> 
+        </div>
+        Copyright @2024 All rigths reserved | Block is made with by <a href="#"><span>Madassar Chaudhry</span></a>
+    </footer>
+</body>
+</html>
